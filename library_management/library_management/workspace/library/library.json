@@ -1,0 +1,53 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"V_wQRS6Oz9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library</span>\",\"col\":12}},{\"id\":\"DrPmAUy2b_\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Vu3q1syEh8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Book shortcuts</b></span>\",\"col\":12}},{\"id\":\"hRKc_n7-IB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New Books\",\"col\":3}},{\"id\":\"BkW9EDg90Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Return & Issue Books\",\"col\":3}},{\"id\":\"s0tACuWOSn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Library members\",\"col\":3}}]",
+ "creation": "2025-05-23 14:42:38.255307",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "stock",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Library",
+ "links": [],
+ "modified": "2025-05-23 21:04:11.792667",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 6.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Create New Books",
+   "link_to": "Book",
+   "stats_filter": "[[\"Book\",\"name\",\"=\",null,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Return & Issue Books",
+   "link_to": "Transaction",
+   "stats_filter": "[[\"Transaction\",\"name\",\"=\",null,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Library members",
+   "link_to": "Library Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Library"
+}
