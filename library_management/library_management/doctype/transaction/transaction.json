@@ -8,19 +8,22 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "naming_series",
   "transaction_type",
+  "naming_series",
   "column_break_w2pgb",
   "book",
+  "book_no",
   "member",
   "column_break_jmwmq",
   "issue_date",
   "return_date",
+  "amount_paid",
   "section_break_pjhy1",
   "rent_fee",
   "column_break_f3jb0",
   "is_returned",
-  "amended_from"
+  "amended_from",
+  "invoice"
  ],
  "fields": [
   {
@@ -40,12 +43,13 @@
    "reqd": 1
   },
   {
+   "depends_on": "eval:doc.transaction_type === \"Issue\"\r\n",
    "fieldname": "book",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Book",
-   "options": "Book",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.transaction_type === \"Issue\"\r\n",
+   "options": "Book"
   },
   {
    "fieldname": "member",
@@ -55,9 +59,11 @@
   },
   {
    "default": "Today",
+   "depends_on": "eval:doc.transaction_type === \"Issue\"",
    "fieldname": "issue_date",
    "fieldtype": "Date",
-   "label": "Issue Date"
+   "label": "Issue Date",
+   "mandatory_depends_on": "eval:doc.transaction_type === \"Issue\""
   },
   {
    "fieldname": "return_date",
@@ -67,6 +73,7 @@
   {
    "fieldname": "rent_fee",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Rent Fee",
    "read_only": 1
   },
@@ -103,12 +110,33 @@
   {
    "fieldname": "column_break_f3jb0",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.transaction_type === \"Return\"",
+   "fetch_from": "book.book_id",
+   "fieldname": "book_no",
+   "fieldtype": "Link",
+   "label": "Book No",
+   "mandatory_depends_on": "eval:doc.transaction_type === \"Return\"",
+   "options": "Transaction"
+  },
+  {
+   "depends_on": "eval:doc.transaction_type === \"Return\"",
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid",
+   "mandatory_depends_on": "eval:doc.transaction_type === \"Return\""
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Data",
+   "label": "Invoice"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-23 21:38:36.372013",
+ "modified": "2025-05-24 12:15:34.278085",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Transaction",
