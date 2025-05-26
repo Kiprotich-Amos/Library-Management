@@ -30,17 +30,17 @@ This is a custom Frappe app designed to manage a library system. It allows you t
 1. Clone the app into your Frappe bench:
     ```bash
     cd ~/frappe-bench/apps
-    git clone https://github.com/yourusername/library_management.git
+    git clone https://git@github.com:Kiprotich-Amos/Library-Management.git
     ```
 
 2. Install the app:
     ```bash
-    bench --site your-site-name install-app library_management
+    bench --site library.local install-app library_management
     ```
 
 3. Run migrations:
     ```bash
-    bench --site your-site-name migrate
+    bench --site library.local migrate
     ```
 
 ---
@@ -68,8 +68,11 @@ Transaction Issue && Return
 
 Invoice Code 
 ![code](/library_management/screenshot/Invoice%20Code.png)
----
 
+
+the code also register New mwmbers and create them automaticaly as customers here is the code 
+![Customer](/library_management/screenshot/Customer.png)
+---
 
 #### License
 
