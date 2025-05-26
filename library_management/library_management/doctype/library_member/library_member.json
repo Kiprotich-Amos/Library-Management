@@ -31,6 +31,7 @@
   {
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view":1,
    "label": "Name"
   },
   {
@@ -47,6 +48,7 @@
    "default": "0.0",
    "fieldname": "outstanding",
    "fieldtype": "Currency",
+   "in_list_view":1,
    "label": "Outstanding ",
    "read_only": 1
   },
