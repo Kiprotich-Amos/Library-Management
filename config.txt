@@ -1,0 +1,6 @@
+User ===> Administartor  
+Password ===> Amos
+
+Database 
+root ==> default 
+Pass => Amos

@@ -5,10 +5,8 @@
 
 This is a custom Frappe app designed to manage a library system. It allows you to register library members, issue and return books, track outstanding rental fees, and manage book inventory.
 
-#### User ===> Administartor  
-#### Password ===> Amos
-
-#### "Password Remains the same "
+#### 
+chech config.txt just incase
 ---
 
 ## 🚀 Features
