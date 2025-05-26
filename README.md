@@ -29,7 +29,7 @@ This is a custom Frappe app designed to manage a library system. It allows you t
 
 1. Clone the app into your Frappe bench:
     ```bash
-    cd ~/frappe-bench/apps
+    cd ~/library-bench/apps
     git clone https://git@github.com:Kiprotich-Amos/Library-Management.git
     ```
 
@@ -70,8 +70,9 @@ Invoice Code
 ![code](/library_management/screenshot/Invoice%20Code.png)
 
 
-the code also register New mwmbers and create them automaticaly as customers here is the code 
-![Customer](/library_management/screenshot/Customer.png)
+the code also register New members and create them automaticaly as customers here 
+this is how
+![customer](/library_management/screenshot/Customer.png)
 ---
 
 #### License
